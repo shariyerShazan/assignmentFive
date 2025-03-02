@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discover</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-50">
+    <nav class="flex justify-between bg-white my-3 px-5 py-2 mx-auto w-[90%] rounded-xl">
+        <div class="flex items-center gap-2">
+           <img class="w-9" src="./assets/logo.png" alt="">
+           <p class="text-3xl ">Dve<span class="font-bold ">Board</span></p>
+        </div>
+        <div>
+            <button id="backToDesk" class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2 text-md CompleteTaskBtn">Back to desk</button>
+        </div>
+   </nav>
+   <div class="w-[90%] mx-auto">
+    <h2 class="text-3xl font-bold text-center pt-5">Blogs</h2>
+    <div class="bg-white my-5 rounded-xl">
+          <h3 class="font-bold text-xl p-2">Question-1: What are the different ways to select an element in the DOM?</h3>
+          <hr>
+          <p class="p-2">
+            1. byID = "select the specific element only" <br>
+            2. byTagName = "selet specific by tag name" <br>
+            3. byClassName = " select the specific class" <br>
+            4. byQuerySelector = "select a query by id, class, tag" <br>
+            5. byQuerySelectorAll = "select match css selector"
+          </p>
+    </div>
+    <div class="bg-white my-5 rounded-xl">
+        <h3 class="font-bold text-xl p-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+        <hr>
+        <p class="p-2">
+         1. innerHTML : its returns set the element content <br> 
+         2. innerText : its rerutns only text from inside the element
+         <br>
+         3. innnerContent : its retruns all text content inside the element
+        </p>
+     </div>
+        <div class="bg-white my-5 rounded-xl">
+            <h3 class="font-bold text-xl p-2">Question-3: What is event bubbling in the DOM?
+            </h3>
+            <hr>
+            <p class="p-2">
+                Event bubbling is a mechanism in the DOM where an event starts from the target element and then propagates up to its parent elements.
+            </p>
+        </div>
+        <div class="bg-white my-5 rounded-xl">
+            <h3 class="font-bold text-xl p-2">Question-4: How do you create, add, and remove elements using JavaScript?
+            </h3>
+            <hr>
+            <p class="p-2">
+                To create elements: document.createElement('tagName'). <br>
+
+                To add elements: appendChild(), append(), prepend(), or insertBefore(). <br>
+                
+                To remove elements: removeChild() or remove().
+            </p>
+        </div>
+   </div>
+
+
+
+   <script src="./script/toggleDesk.js"></script>
+   <script src="./script/activeLogClear.js"></script>
+   <script src="./script/date.js"></script>
+   <script src="./script/buttonToggle.js"></script>
+</body>
+</html>

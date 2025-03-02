@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+    <!-- nav -->
+      <nav class="flex justify-between bg-white my-3 px-5 py-2 mx-auto w-[90%] rounded-xl">
+           <div class="flex items-center gap-2">
+              <img class="w-9" src="./assets/logo.png" alt="">
+              <p class="text-3xl ">Dve<span class="font-bold ">Board</span></p>
+           </div>
+           <div class="flex  gap-5">
+               <div class="flex gap-2 items-center py-2 px-3 bg-gray-100 rounded-full ">
+                  <img class="w-6" src="./assets/checkbox.png" alt="">
+                  <p id="navConpleteTask" class="text-lg font-bold"></p>
+               </div>
+               <button class="cursor-pointer">
+                <img id="theme-btn" class="w-9" src="./assets/theme-btn.png" alt="">
+               </button>
+           </div>
+      </nav>
+
+     <!-- sec -->
+      <div class="w-[90%] mx-auto">
+           <div class="grid grid-cols-4 gap-4 ">
+                <div class="col-span-3  p-3 bg-white rounded-xl">
+                    <div class=" grid grid-cols-4 gap-3 rounded-xl mb-3">
+                        <div class="bg-gray-100 flex p-2 gap-3 items-center rounded-xl">
+                        <div class="rounded-full bg-white p-3  ">
+                            <img class="aspect-ratio w-6" src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-sm ">Task Assigned </p>
+                            <p id="taskNumber" class="text-lg font-bold"></p>
+                        </div>
+                        </div>
+                        <button id="discoverSomethingClick" class="flex items-center gap-3 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] p-2 rounded-xl col-span-2 cursor-pointer">
+                            <div>
+                            <img src="./assets/board.png"  alt="">
+                            </div>
+                            <div>
+                                <p>Discover Something</p>
+                                <p>New Today!</p>
+                            </div>
+                        </button>
+                        <div class="bg-gray-100 flex p-2 gap-3 items-center rounded-xl">
+                        <div class="rounded-full bg-white p-3  ">
+                        <img class="aspect-ratio w-6" src="./assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <p id="day-name" class="text-md ">Wed , </p>
+                            <p id="date-today" class="text-lg font-bold">Jul 28 2025 </p>
+                        </div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="grid grid-cols-3 mt-3 gap-2">
+                         <!-- card one -->
+                        <div class="bg-gray-100 p-3 rounded-xl">
+                            <button class="text-sm font-sm px-3 py-1 bg-white rounded-xl">ShopEase</button>
+                            <p class="py-3 font-bold">Fix Mobile Button Issue </p>
+                            <p class="font-sm text-sm py-2 px-3 bg-white rounded-xl">
+                                Debug using Chrome DevTools, check for overlapping elements, 
+                            </p>
+                            <div class="flex items-center justify-between py-3">
+                                <div>
+                                    <p class="font-sm text-sm pb-1">Deadline</p>
+                                    <p class="text-md">21 March 2025</p>
+                                </div>
+                                <button  class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2 text-md CompleteTaskBtn">Completed</button>
+                            </div>
+                        </div>
+                           <!-- card two -->
+                        <div class="bg-gray-100 p-3 rounded-xl">
+                            <button class="text-sm font-sm px-3 py-1 bg-white rounded-xl">CloudSync</button>
+                            <p class="py-3  font-bold">Add Dark Mode</p>
+                            <p class="font-sm text-sm py-2 px-3 bg-white rounded-xl">
+                                Debug using Chrome DevTools, check for overlapping elements, 
+                            </p>
+                            <div class="flex items-center justify-between py-3">
+                                <div>
+                                    <p class="font-sm text-sm pb-1">Deadline</p>
+                                    <p class="text-md">21 March 2025</p>
+                                </div>
+                                <button class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2 text-md CompleteTaskBtn">Completed</button>
+                            </div>
+                        </div>
+                         <!-- card three -->
+                         <div class="bg-gray-100 p-3 rounded-xl">
+                            <button class="text-sm font-sm px-3 py-1 bg-white rounded-xl">SwiftPay</button>
+                            <p class="py-3 font-bold">Optimize  Home page </p>
+                            <p class="font-sm text-sm py-2 px-3 bg-white rounded-xl">
+                                Debug using Chrome DevTools, check for overlapping elements, 
+                            </p>
+                            <div class="flex items-center justify-between py-3">
+                                <div>
+                                    <p class="font-sm text-sm pb-1">Deadline</p>
+                                    <p class="text-md">21 March 2025</p>
+                                </div>
+                                <button class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2 text-md CompleteTaskBtn">Completed</button>
+                            </div>
+                        </div>
+                         <!-- card four -->
+                         <div class="bg-gray-100 p-3 rounded-xl">
+                            <button class="text-sm font-sm px-3 py-1 bg-white rounded-xl">Meta</button>
+                            <p class="py-3 font-bold">Add new emoji 🤲</p>
+                            <p class="font-sm text-sm py-2 px-3 bg-white rounded-xl">
+                                Debug using Chrome DevTools, check for overlapping elements, 
+                            </p>
+                            <div class="flex items-center justify-between py-3">
+                                <div>
+                                    <p class="font-sm text-sm pb-1">Deadline</p>
+                                    <p class="text-md">21 March 2025</p>
+                                </div>
+                                <button class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2 text-md CompleteTaskBtn">Completed</button>
+                            </div>
+                        </div>
+                         <!-- card five-->
+                         <div class="bg-gray-100 p-3 rounded-xl">
+                            <button class="text-sm font-sm px-3 py-1 bg-white rounded-xl">Google LLC</button>
+                            <p class="py-3 font-bold">Integrate OpenAI API </p>
+                            <p class="font-sm text-sm py-2 px-3 bg-white rounded-xl">
+                                Debug using Chrome DevTools, check for overlapping elements, 
+                            </p>
+                            <div class="flex items-center justify-between py-3">
+                                <div>
+                                    <p class="font-sm text-sm pb-1">Deadline</p>
+                                    <p class="text-md">21 March 2025</p>
+                                </div>
+                                <button class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2 text-md CompleteTaskBtn">Completed</button>
+                            </div>
+                        </div>
+                         <!-- card six -->
+                         <div class="bg-gray-100 p-3 rounded-xl">
+                            <button class="text-sm font-sm px-3 py-1 bg-white rounded-xl">Glassdoar</button>
+                            <p class="py-3 font-bold">Improve Job searching </p>
+                            <p class="font-sm text-sm py-2 px-3 bg-white rounded-xl">
+                                Debug using Chrome DevTools, check for overlapping elements, 
+                            </p>
+                            <div class="flex items-center justify-between py-3">
+                                <div>
+                                    <p class="font-sm text-sm pb-1">Deadline</p>
+                                    <p class="text-md">21 March 2025</p>
+                                </div>
+                                <button class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2 text-md CompleteTaskBtn">Completed</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- active log -->
+                <div class="">
+                    <div class="flex flex-col items-center pt-4 pb-3 bg-white rounded-t-xl rounded-x-xl ">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/activity.png" alt="">
+                            <p>Activity Log</p>
+                        </div>
+                        <button id="activeLog" class="cursor-pointer px-5 py-2 bg-[#3752FD] rounded-xl text-white text-sm my-2">Clear History</button>
+                    </div>
+                     <div id="activeLogList" class="bg-white rounded-x-xl rounded-b-xl pb-2">
+                        <hr class="">
+                       
+                        
+                     </div>
+                </div>  
+           </div>
+
+      </div>
+
+
+      <script src="./script/toggleTwo.js"></script>
+       <script src="./script/toggleDesk.js"></script>
+      <script src="./script/activeLogClear.js"></script>
+      <script src="./script/date.js"></script>
+      <script src="./script/buttonToggle.js"></script>
+</body>
+</html>
